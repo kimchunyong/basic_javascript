@@ -12,10 +12,8 @@
 
 ![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)
 
-![Code Climate](https://img.shields.io/codeclimate/issues/twbs/bootstrap.svg)
 
-
-피드백 - lovemy5854@naver.com
+ - lovemy5854@naver.com
 
 # 기여방법
 - (https://github.com/kimchunyong/basic_javascript.git)을 포크합니다.

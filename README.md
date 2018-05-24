@@ -9,6 +9,12 @@
  -chapter01
 
 # 정보
+
+![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)
+
+![Code Climate](https://img.shields.io/codeclimate/issues/twbs/bootstrap.svg)
+
+
 피드백 - lovemy5854@naver.com
 
 # 기여방법

@@ -9,7 +9,7 @@
  -chapter01
 
 # 정보
-lovemy5854@naver.com
+피드백 - lovemy5854@naver.com
 
 # 기여방법
 - (https://github.com/kimchunyong/basic_javascript.git)을 포크합니다.

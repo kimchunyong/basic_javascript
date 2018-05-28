@@ -6,7 +6,7 @@
 
 # 업데이트 내역
 - v0.0.1
- -chapter01 (기본부품과 조합)
+ -chapter01 (기본부품과 조합) https://github.com/kimchunyong/basic_javascript/wiki
 
 # 정보
 

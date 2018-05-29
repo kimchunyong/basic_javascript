@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>변수의 유효범위</title>
+</head>
+
+<body>
+    <script>
+        var scope1 = "global"; //전역 변수를 선언한다.
+        function checkscope() {
+            var scope = "local"; //지역 변수를 선언한다.
+            return scope; //전역변수가 아닌 지역 변수를 반환한다.
+        }
+        checkscope();
+
+        scope2 = "global";
+
+        function checkscope2() {
+            scope2 = "local1"; //var 선언을 하지않아서 전역변수를 오염시킴
+            myscope2 = "local2"; //전역변수 선언으로 지역변수로 오염되었다.
+            return [scope2, myscope2];
+        }
+        checkscope2();
+        console.log(scope2);
+        console.log(myscope2);
+    </script>
+</body>
+
+</html>

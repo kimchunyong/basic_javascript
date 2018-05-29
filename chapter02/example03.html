@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        *문자열을 for문으로 돌려서 공백이 있는건 continue를 통해 넘기고 for문을 계속 실행하면서 공백을 뺀 나머지를 배열에추가
+        *txtarr에 배열을 저장한뒤 join()함수를 사용하여 합친다.
+        *그뒤 concat()함수로 맨마지막에 공백을 한칸 띄워준다.
+        */
+
+        var txt = "hellO TherE, HoW ArE YoU DoinG?";
+        var txtarr = [];
+        for(var i = 0; i < txt.length; i++) {
+            if(txt[i] === " ") {
+            continue;
+        }
+        txtarr.push(txt[i]);
+        }
+        console.log("띄어쓰기 빼고 배열에 넣음" + " " + txtarr);
+        document.write("띄어쓰기 빼고 배열에 넣음" + " " + txtarr + "<br/>");
+
+        var merge = txtarr.join("");
+        console.log("배열을 합쳤음" + " " + merge);
+        document.write("배열을 합쳤음" + " " + merge + "<br/>");
+        var s = merge.concat(" //"); //공백한칸 추가
+        console.log("문자열 마지막에 공백한칸추가"+ " " + s);
+        document.write("문자열 마지막에 공백한칸추가"+ " " + s + "<br/>");
+
+    </script>
+</body>
+</html>

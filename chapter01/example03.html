@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+         *영화를 보러 온 관객이 12세 이상이라면 입장가능
+         *영화를 보러 온 관객이 12세 미만이라면 입장불가
+         *영화를 보러 온 관객이 12세 미만 이지만 어른과 함께 왔다면 입장할수 있다.
+         */
+        var 나이 = 11;
+        var 어른동반 = true;
+        if (나이 >= 12) {
+            document.write("입장가능");
+        } else {
+            if (어른동반) {
+                document.write("동반 입장가능");
+            } else {
+                document.write("동반 입장불가");
+            }
+        }
+    </script>
+</body>
+
+</html>

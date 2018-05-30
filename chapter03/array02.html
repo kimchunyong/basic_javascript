@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>집으로 오는 길 찾기</title>
+</head>
+
+<body>
+    <script>
+        var 건물 = [];
+        건물.push("우리 집");
+        건물.push("집 앞 도로");
+        건물.push("깜빡이는 가로등");
+        건물.push("물 새는 소화전");
+        건물.push("소방서");
+        건물.push("고양이 구출 센터");
+        건물.push("우리 모교");
+        건물.push("친구네 집");
+
+        건물.pop(); //친구네 집
+        건물.pop(); //우리 모교
+        건물.pop(); //고양이 구출 센터
+        건물.pop(); //소방서
+        건물.pop(); //물 새는 소화전
+        건물.pop(); //깜빡이는 가로등
+        건물.pop(); //집 앞 도로
+        건물.pop(); //우리 집
+
+        Math.random(Math.floor() * 4);
+        Math.random();
+        Math.random();
+
+        var 무작위단어 = ["폭발", "동굴", "공주", "펜"];
+        var 무작위색인 = Math.floor(Math.random() * 무작위단어.length);
+        무작위단어[무작위색인];
+
+        //완성된 의사 결정기
+        var 답변 = [
+            "좋은 생각이에요.",
+            "네. 꼭 해보세요.",
+            "별로 좋은 생각 같지 않아요",
+            "오늘은 안 해도 되지 않을까요?",
+            "컴퓨터는 하지 말라고 하네요."
+        ];
+        //밀크셰이크 한 잔 더 마셔도 될까요?
+        답변[Math.floor(Math.random() * 5)];
+        //숙제를 해야 할까요?
+        답변[Math.floor(Math.random() * 5)];
+    </script>
+</body>
+
+</html>

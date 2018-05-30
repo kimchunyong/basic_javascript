@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>구구단만들기</title>
+</head>
+<body>
+    <script>
+        /*
+        *구구단 출력
+        *구구단중 2,5,8단출력
+        */
+
+        //구구단 출력
+
+        //for문
+        for(i=1; i < 10; i++){
+            for(j=1; j < 10; j++){
+                console.log(i+"*"+j+"*"+"="+i*j);
+            }
+        }
+        //while문
+        var a = 1;
+
+        while (a < 9) {
+            a++;
+            var b = 1;
+            while (b < 10) {
+                console.log(`${a} * ${b} = ${a * b}`);
+                b++;
+            }
+        }
+        //2,5,8단만 출력
+        //for문
+        for(i=1; i < 10; i++){
+            if(i !== 2 && i !==5 && i !== 8) {
+            continue;
+            }
+            for(j=1; j < 10; j++){
+                console.log(i+"*"+j+"*"+"="+i*j);
+            }
+        }
+        //whlie문
+        var a2 = 1;
+
+        while (a2 < 9) {
+            if(a2 === 2 || a2 === 5 || a2 ===8) {
+                var b2 = 1;
+                while (b2 < 10) {
+                    console.log(`${a2} * ${b2} = ${a2 * b2}`);
+                    b2++;
+                }
+            }
+            a2++;
+        }
+    </script>
+</body>
+</html>

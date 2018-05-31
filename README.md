@@ -7,7 +7,7 @@
 # 업데이트 내역
 - v0.0.1 [-chapter01 (기본부품과 조합)](https://github.com/kimchunyong/basic_javascript/wiki/기본부품)
 - v0.0.2 -chapter02 (자료형과 변수)
-- v0.0.3 -chapter03 (배열)
+- v0.0.3 [-chapter03 (배열)](https://github.com/kimchunyong/basic_javascript/wiki/%EB%B0%B0%EC%97%B4)
 
 # 정보
 

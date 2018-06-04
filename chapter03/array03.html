@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>인디언 이름 제조기</title>
+</head>
+
+<body>
+    <script>
+        var 색상목록 = ["푸른", "붉은", "검은", "하얀"];
+        var 자연목록 = ["늑대", "태양", "독수리", "바람"];
+        var 단어목록 = ["눈물", "환생", "기상", "일격", "유령"];
+        var 감정목록 = ["기쁨", "슬픔", "화남", "웃긴"]
+
+        var 색상 = 색상목록[Math.floor(Math.random() * 색상목록.length)];
+        var 자연 = 자연목록[Math.floor(Math.random() * 자연목록.length)];
+        var 단어 = 단어목록[Math.floor(Math.random() * 단어목록.length)];
+        var 감정 = 감정목록[Math.floor(Math.random() * 감정목록.length)];
+
+        var 인디언이름1 = [감정, "보다", 색상, ",", 자연, "의", 단어, "!!"].join(" ")
+        var 인디언이름 = 감정 + " 보다 " + 색상 + "," + 자연 + " 의 " + 단어 + "!!";
+        document.write(인디언이름1 + "<br/>");
+        console.log(인디언이름);
+        document.write(인디언이름);
+
+        var array = [3, 2, 1];
+        //join을 써서 "3 is bigger than 2 is bigger than 1"
+        var joinTxt = array.join("")
+        var s = array[0] + " is bigger than " + array[1] + " is bigger than " + array[2];
+        console.log(s)
+
+        var txt = joinTxt[0] + " is bigger than " + joinTxt[1] + " is bigger than " + joinTxt[2];
+        console.log(txt)
+    </script>
+</body>
+
+</html>

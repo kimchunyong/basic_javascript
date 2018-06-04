@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var foo = function(x){
+            return 2 * x + 3;
+        }
+
+        var y = foo(2);
+        console.log(y);
+        y = foo(3);
+        console.log(y);
+
+        var foo2 = function() {
+            console.log("I am function");
+        }
+
+        foo(); //함수호출
+
+        var foo3 = function(name) {
+            console.log("hello " + name);
+        }
+        foo3("honux");
+
+        var repeat = function(text, num) {
+            //code here
+            console.log(text + name);
+        };
+
+        repeat("Hello", 5);
+    </script>
+</body>
+</html>

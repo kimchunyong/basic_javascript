@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>객체</title>
+</head>
+
+<body>
+    <script>
+        //객체 만들기
+        var cat = {
+            "leg": 3,
+            name: "yami",
+            "color": "rainbow"
+        }
+        document.write(cat["name"] + "의 다리는" + cat["leg"] + "개 이고, 색상은" + cat["color"] + "입니다.");
+        document.write(cat.name + "의 다리는" + cat.leg + "개 이고, 색상은" + cat.color + "입니다.");
+
+        var catKey = Object.keys(cat);
+        var keyWrite = ""
+        for (var i = 0; i <= catKey.length - 1; i++) {
+            keyWrite += ("<p>" + (i + 1) + "번째: " + catKey[i] + "</p>");
+        }
+        document.write(keyWrite);
+
+        /*
+         *배열에 값 넣기
+         */
+        var cat1 = {};
+        cat1["leg"] = 3;
+        cat1["이름"] = "야옹이";
+        cat1["색깔"] = "얼룩무늬";
+        console.log(cat1)
+    </script>
+</body>
+
+</html>

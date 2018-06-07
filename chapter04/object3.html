@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var 빌려준돈 = {};
+        빌려준돈["지훈"] = 5000;
+        빌려준돈["민지"] = 7000;
+        빌려준돈["지훈"]; //5000
+        빌려준돈["진영"]; //undefined
+
+        빌려준돈["지훈"] += 3000;
+        document.write(빌려준돈["지훈"])//8000
+    </script>
+</body>
+</html>

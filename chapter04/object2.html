@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>배열과 객체 결합하기</title>
+</head>
+<body>
+    <script>
+        var 공룡 =[
+            {이름 : "티라노사우르스 렉스", 연대 : "백악기 후기"},
+            {이름 : "스테고사우르스", 연대 : "쥐라기 후기"},
+            {이름 : "플라테오사우루스", 연대 : "트라이아스기"}
+        ];
+        document.write("이름:" + 공룡[0].이름 + "연대:" + 공룡[0].연대 );
+
+        var 민지 = {이름: "민지", 나이: 11, 행운의숫자: [2, 4, 8, 16]};
+        var 지훈 = {이름: "지훈", 나이:5, 행운의숫자: [3, 9, 40]};
+        var 서연 = {이름: "서연", 나이:9, 행운의숫자: [1, 2, 3]};
+
+        var 친구 = [민지,지훈,서연];
+        console.log(친구);
+    </script>
+</body>
+</html>

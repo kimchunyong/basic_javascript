@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        *{margin:0 auto;}
+        .movie_list ul{margin:0;padding:10px 0 10px 10px;}
+        .movie_list li{padding:0 0 5px 0;}
+    </style>
 </head>
 
 <body>
+    <div class="movie_list"></div>
     <script>
         var movie = {
             "니모를찾아서": {
@@ -30,6 +36,18 @@
                 형식: "블루레이"
             }
         };
+        var movieList = document.getElementsByClassName("movie_list")[0];
+        Object.keys(movie).map((key, index)=>{
+            movieList.innerHTML += 
+                "<h1>" + key + "</h1>" 
+                + "<ul>" 
+                + "<li>" + movie[key].개봉연도 + "</li>" 
+                + "<li>" + movie[key].상영시간 + "</li>" 
+                + "<li>" + movie[key].출연진 + "</li>" 
+                + "<li>" + movie[key].형식 + "</li>" 
+                + "</ul>"
+        });
+        
     </script>
 </body>
 

@@ -39,7 +39,7 @@
         var movieList = document.getElementsByClassName("movie_list")[0];
         Object.keys(movie).map((key, index)=>{
             movieList.innerHTML += 
-                "<h1>" + key + "</h1>" 
+                "<h1>" + (index+1) + "." + key + "</h1>" 
                 + "<ul>" 
                 + "<li>" + movie[key].개봉연도 + "</li>" 
                 + "<li>" + movie[key].상영시간 + "</li>" 

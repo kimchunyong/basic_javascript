@@ -37,6 +37,7 @@
             }
         };
         var movieList = document.getElementsByClassName("movie_list")[0];
+        //Object.keys(movie)를 이용하여 객체의 key값을 추출 map을 사용해서 key값과,index를 넘겨 순서대로 html로 출력
         Object.keys(movie).map((key, index)=>{
             movieList.innerHTML += 
                 "<h1>" + (index+1) + "." + key + "</h1>" 

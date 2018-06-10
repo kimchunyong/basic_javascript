@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
     <script>
         var 점수 = {
-            "철이" : 0,
-            1: 2,
-            addNum : function(){
+            "철이": 0,
+            addNum: function() {
                 this.철이 += 10;
             }
         }
@@ -22,10 +23,26 @@
 
         var 재밌는사물 = {
             "이름": "웃기는 물건",
-            "배열": [7, 9, {목적:"장난", 숫자: 123}, 3.3],
+            "배열": [7, 9, {
+                목적: "장난",
+                숫자: 123
+            }, 3.3],
             "무작위동물": "바나나상어"
         }
         console.log(재밌는사물.배열[2].숫자) //123
+
+        var 고양이 = {
+            "다리": 3,
+            "이름": "야옹이",
+            1: "숫자도 들어간다"
+        };
+
+        Object.keys(고양이);
+        Object.keys(고양이)[0]; // "1";
+        if (typeof Object.keys(고양이)[0] === "string") {
+            console.log("문자열 입니다.");
+        }
     </script>
 </body>
+
 </html>

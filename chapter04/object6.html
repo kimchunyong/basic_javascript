@@ -20,7 +20,23 @@
         var shallow = array;
         shallow[0] = 'd';
         console.log(array) // ['d', 'b', 'c'] 객체는 같은값을 바라보며 참조(메모리의 주소)를 복사.
+        var deep = array.slice(); //깊은복사 같은 메모리값을 가지지않는다.
         
+        //객체의 깊은복사 방법
+        function clone(obj) {
+            var output = {};
+            for(var i in obj){
+                output[i] = obj[i];
+            }
+            return output;
+        }
+        var original = {a: 10, b: 20};
+        var referenced = original;
+        var cloned = clone(original);
+        cloned.c = 30;
+
+        console.log(original); //{a: 10, b:20}
+        console.log(cloned); //{a:10, b:20, c:30}
     </script>
 </body>
 </html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>객체의 복사</title>
+</head>
+<body>
+    <script>
+        //문자열,숫자,불린
+        var string = 'hello';
+        var copy = string;
+        console.log(copy) //hello;
+
+        copy = 'hi';
+        console.log(string) //'hello'
+
+        var array = ['a', 'b', 'c'];
+        var shallow = array;
+        shallow[0] = 'd';
+        console.log(array) // ['d', 'b', 'c'] 객체는 같은값을 바라보며 참조(메모리의 주소)를 복사.
+        
+    </script>
+</body>
+</html>

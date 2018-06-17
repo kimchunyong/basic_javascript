@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="animals"></div>
+    <script>
+        var 동물 = ["사자", "홍학", "북극곰", "보아뱀"];
+        var animals = document.getElementsByClassName("animals")[0];
+
+        for (var i = 0; i < 동물.length; i++) {
+            animals.innerHTML += "<p>" + (i + 1) + ".이 동물원에는 이런 동물이 삽니다 : " + 동물[i] + "." + "</p>"
+        }
+    </script>
+</body>
+
+</html>

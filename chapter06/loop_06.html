@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var 알파벳 = "abcdefghijklmnopqrstuvwxyz";
+        var 무작위문자열 = "";
+        while (무작위문자열.length <= 6) {
+            무작위문자열 += 알파벳[Math.floor(Math.random() * 알파벳.length)];
+        }
+        console.log(무작위문자열);
+    </script>
+</body>
+
+</html>

@@ -9,6 +9,7 @@
 - v0.0.2 -chapter02 (자료형과 변수)
 - v0.0.3 [-chapter03 (배열)](https://github.com/kimchunyong/basic_javascript/wiki/%EB%B0%B0%EC%97%B4)
 - v0.0.4 [-chapter04 (객체)](https://github.com/kimchunyong/basic_javascript/wiki/%EA%B0%9D%EC%B2%B4(Object))
+- v0.0.5 [-chapter05 (DOM,BOM)](https://github.com/kimchunyong/basic_javascript/wiki/DOM(Document-Object-Model),-BOM(Browser-Object-Model))
 
 # 정보
 

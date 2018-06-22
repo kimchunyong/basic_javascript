@@ -31,35 +31,44 @@
 
         var remaingLetters = word.length;
 
-        var life = word.length + 5;
+        var life = remaingLetters + 5;
 
-        while (remaingLetters > 0) {
+        while (remaingLetters > 0 || life > 0) {
             alert(answerArray.join(" ") + "  남은생명:" + life);
 
             var guess = prompt("글자를 입력하세요. 취소를 누르면 게임을 멈춥니다.");
-
+            guess = guess.toLowerCase();
 
             if (guess === null) {
                 break;
             } else if (guess.length !== 1) {
                 alert("한 글자만 입력해주세요.");
             } else {
+
                 for (var j = 0; j < word.length; j++) {
-                    if (word[j] === guess) {
+                    if (word[j] === guess && answerArray[j] === "_") {
                         answerArray[j] = guess;
                         remaingLetters--;
                     }
                 }
+
+                var loc = answerArray.indexOf(guess);
+
+                if (life === 0) {
+                    alert("game over");
+                    break;
+                }
+                console.log(answerArray[loc])
+                if (answerArray[loc] === word[loc]) {
+                    life--;
+                } else {
+                    alert("중복 입력하셨습니다.")
+                }
             }
-            if (life === 0) {
-                alert("game over");
-                break;
-            }
-            life--;
+
         }
 
-        if (remaingLetters.length === 0) {
-            console.log(111)
+        if (!remaingLetters) {
             alert("정답은" + word + "입니다.");
         }
     </script>

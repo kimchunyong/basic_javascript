@@ -14,7 +14,10 @@
             "jvascript",
             "monkey",
             "amazing",
-            "pancake"
+            "pancake",
+            "nike",
+            "goals",
+            "board"
         ];
 
         var word = words[Math.floor(Math.random() * words.length)];
@@ -28,10 +31,14 @@
 
         var remaingLetters = word.length;
 
+        var life = word.length + 5;
+
         while (remaingLetters > 0) {
-            alert(answerArray.join(" "));
+            alert(answerArray.join(" ") + "  남은생명:" + life);
 
             var guess = prompt("글자를 입력하세요. 취소를 누르면 게임을 멈춥니다.");
+
+
             if (guess === null) {
                 break;
             } else if (guess.length !== 1) {
@@ -44,9 +51,14 @@
                     }
                 }
             }
+            if (life === 0) {
+                alert("game over");
+                break;
+            }
+            life--;
         }
 
-        if (!remaingLetters.length) {
+        if (remaingLetters.length === 0) {
             console.log(111)
             alert("정답은" + word + "입니다.");
         }

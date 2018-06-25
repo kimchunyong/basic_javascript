@@ -47,24 +47,24 @@
 
                 for (var j = 0; j < word.length; j++) {
                     if (word[j] === guess && answerArray[j] !== "_") {
-                        alert("중복 입력하셨습니다.")
-                    } else if (word[j] === guess && answerArray[j] === "_") {
+                        alert("중복 입력하셨습니다.");
+                        life++;
+                        break;
+                    }
+                    if (word[j] === guess && answerArray[j] === "_") {
                         answerArray[j] = guess;
                         remaingLetters--;
-                        var loc = answerArray.indexOf(guess);
-
-                        if (life === 0) {
-                            alert("game over");
-                            break;
-                        }
-
-
-                        if (answerArray[loc] === word[loc]) {
-                            life--;
-                        }
                     }
 
                 }
+
+                life--;
+
+                if (life === 0) {
+                    alert("game over");
+                    break;
+                }
+
 
             }
 

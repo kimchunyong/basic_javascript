@@ -33,7 +33,7 @@
 
         var life = remaingLetters + 5;
 
-        while (remaingLetters > 0 || life > 0) {
+        while (life > 0) {
             alert(answerArray.join(" ") + "  남은생명:" + life);
 
             var guess = prompt("글자를 입력하세요. 취소를 누르면 게임을 멈춥니다.");
@@ -49,7 +49,7 @@
                     if (word[j] === guess && answerArray[j] !== "_") {
                         alert("중복 입력하셨습니다.");
                         life++;
-                        break;
+                        break; //for문이 계속돌아서 alert가 여러번 되는걸 방지
                     }
                     if (word[j] === guess && answerArray[j] === "_") {
                         answerArray[j] = guess;

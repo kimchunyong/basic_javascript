@@ -20,20 +20,19 @@
             "board"
         ];
 
-        var word = words[Math.floor(Math.random() * words.length)];
-
-
-
+        var word = words[Math.floor(Math.random() * words.length)]; //words배열에서 랜덤으로 하나 뽑는다.
+        var remaingLetters = word.length;
+        var life = remaingLetters + 5; //문자열 길이 + 5만큼의 life를 추가해준다.
         var answerArray = [];
-        for (var i = 0; i < word.length; i++) {
+
+        for (var i = 0; i < remaingLetters; i++) { //words배열에서 뽑은 문자열의 길이만큼 "_"를 생성해서 answerArray에 넣어준다.
             answerArray[i] = "_";
         }
 
-        var remaingLetters = word.length;
 
-        var life = remaingLetters + 5;
 
-        while (life > 0) {
+
+        while (life > 0) { //life가 0이면 중지됨
             alert(answerArray.join(" ") + "  남은생명:" + life);
 
             var guess = prompt("글자를 입력하세요. 취소를 누르면 게임을 멈춥니다.");

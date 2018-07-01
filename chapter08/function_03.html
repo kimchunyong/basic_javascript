@@ -11,11 +11,19 @@
 <body>
     <script>
         const catDraw = function(loopNum) {
-            for (let = i; i < loopNum; i++) {
+            for (let i = 0; i < loopNum; i++) {
                 console.log(i + " = ^.^= ");
             }
         }
         catDraw(5);
+
+        const catDraws = function(num, content) {
+            for (let i = 0; i < num; i++) {
+                console.log(i + " " + content);
+            }
+        };
+        catDraws(5, "=^.^=");
+        catDraws(4, "^_^");
     </script>
 </body>
 

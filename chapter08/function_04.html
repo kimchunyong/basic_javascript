@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var txtList = ["행성", "벌레", "꽃", "컴퓨터"];
+        var randTxt = function (txt) {
+            return txt[Math.floor(Math.random() * txt.length)];
+        }
+        var result = randTxt(txtList);
+        console.log(result);
+        console.log(randTxt(["자비에", "울버린", "매그니토", "미스틱"]));
+    </script>
+</body>
+
+</html>

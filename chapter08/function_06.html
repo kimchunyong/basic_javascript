@@ -24,11 +24,24 @@
         }
 
         var correctArray = function (word) {
+            var answerArray = [];
 
+            for (var i = 0; i < word.length; i++) {
+                answerArray[i] = "_";
+            }
+            return answerArray;
         }
 
+        var promptTxt = function () {
+            var userInput = prompt("정답을 입력해주세요.");
+            return userInput;
+        }
+
+
         var word = txtSlc();
-        console.log(word)
+        var coArray = correctArray(word);
+        var remaingLetter = word.length;
+        console.log(word, coArray, remaingLetter)
     </script>
 </body>
 

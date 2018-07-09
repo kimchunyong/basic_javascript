@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>안녕하세요!</h1>
+    <script>
+        var myFriends = ["영수", "영희", "수지", "미애"];
+        var count = 1000;
+        for (var i = 0; i < myFriends.length; i++) {
+            console.log(myFriends[i])
+            $("body").append("<p>" + myFriends[i] + "</p>").hide().fadeIn(800);
+        }
+        $("p").append("바보");
+        $("h1").text("내 친구들");
+
+        for (var j = 0; j < 5; j++) {
+            $("h1").fadeOut(count).fadeIn(count);
+            count += 1000;
+        }
+        /*
+         * fadeTo
+         * @pram1 : 속도, @Pram2 : 불투명도, @Pram3 : 콜백함수
+        */
+        $("h1").fadeTo(2000, 0.5);
+
+    </script>
+
+</body>
+
+</html>
